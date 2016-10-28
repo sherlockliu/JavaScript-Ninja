@@ -1,0 +1,14 @@
+{
+  "name": "bower.json",
+  "description": "this is a test",
+  "main": "",
+  "authors": [
+    "sherlock.liu"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sherlockliu/JavaScript-Ninja",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5"
+  }
+}

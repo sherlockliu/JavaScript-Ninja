@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>module-leason</title>
+    <script src="../components/seajs/dist/sea.js"></script>
+    <script>
+        var jsPath = "../module-leason/js/";
+        // Set configuration
+        seajs.config({
+            base: "../components/",
+            alias: {
+                "core": "jquery/dist/core.js",
+                "jquery": "jquery/dist/jquery.js",
+                "me":"jquery/dist/me.js"
+            }
+        });
+        // 将 jQuery 暴露到全局
+//        seajs.modifiers('jquery', function(require, exports) {
+//            window.jQuery = window.$ = exports
+//        })
+        seajs.use([jsPath + "index",'jquery'],function(index,jQuery){
+            console.log(jQuery);
+            index.showName();
+            index.init();
+        });
+    </script>
+
+</head>
+<body>
+<input id="show" type="text"/>
+</body>
+</html>

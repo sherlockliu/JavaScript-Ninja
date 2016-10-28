@@ -1,2 +1,16 @@
-
 *.log
+*.iml
+.ipr
+.iws
+*~
+~*
+*.diff
+*.patch
+*.bak
+.DS_Store
+Thumbs.db
+*.swp
+.nojekyll
+.project
+node_modules
+.*/
